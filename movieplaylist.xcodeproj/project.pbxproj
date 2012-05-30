@@ -129,7 +129,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0420;
-				ORGANIZATIONNAME = "DNPメディアクリエイト";
+				ORGANIZATIONNAME = "UtageWorks";
 			};
 			buildConfigurationList = 7D3560A71575D5D7002F7767 /* Build configuration list for PBXProject "movieplaylist" */;
 			compatibilityVersion = "Xcode 3.2";

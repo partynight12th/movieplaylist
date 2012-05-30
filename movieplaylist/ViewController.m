@@ -3,7 +3,7 @@
 //  movieplaylist
 //
 //  Created by 光太郎 川嶋 on 12/05/30.
-//  Copyright (c) 2012年 DNPメディアクリエイト. All rights reserved.
+//  Copyright (c) 2012年 UtageWorks. All rights reserved.
 //
 
 #import "ViewController.h"
@@ -55,6 +55,22 @@
 {
     // Return YES for supported orientations
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+}
+
+- (IBAction)play:(id *)sender{
+	NSLog(@"Play");
+
+	NSString *path = [[NSBundle mainBundlee] pathForResorce:@"sample" ofType:@"m4v"];
+	NSURL *url = [NSURL fileURLWithPath:path];
+
+	MPMoviePlayerController *player = [[MPMoviePlayerController alloc] initWithContentURL: url];
+
+	[player.view setFrame: [self.view bounds]];
+
+	[self.view addSubview:player.view];
+
+	[player play];
+
 }
 
 @end
